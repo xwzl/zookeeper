@@ -18,10 +18,6 @@
 
 package org.apache.zookeeper.server;
 
-import java.io.IOException;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.TimeUnit;
-import javax.management.JMException;
 import org.apache.yetus.audience.InterfaceAudience;
 import org.apache.zookeeper.audit.ZKAuditProvider;
 import org.apache.zookeeper.jmx.ManagedUtil;
@@ -39,6 +35,11 @@ import org.apache.zookeeper.server.util.JvmPauseMonitor;
 import org.apache.zookeeper.util.ServiceUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import javax.management.JMException;
+import java.io.IOException;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 
 /**
  * This class starts and runs a standalone ZooKeeperServer.
